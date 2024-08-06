@@ -18,6 +18,7 @@ public class FalloutMcCreativeModeTabs {
                     .title(Component.translatable("creativetab.fallout_items_tab"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(FalloutMcItems.NUKA_COLA.get());
+                        output.accept(FalloutMcItems.STIMPACK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

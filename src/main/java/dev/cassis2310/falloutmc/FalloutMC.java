@@ -1,6 +1,7 @@
 package dev.cassis2310.falloutmc;
 
 import com.mojang.logging.LogUtils;
+import dev.cassis2310.falloutmc.init.items.FalloutMcCreativeModeTabs;
 import dev.cassis2310.falloutmc.init.items.FalloutMcItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,6 +29,8 @@ public class FalloutMC
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        FalloutMcCreativeModeTabs.register(modEventBus);
 
         FalloutMcItems.register(modEventBus);
     }

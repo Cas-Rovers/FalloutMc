@@ -7,12 +7,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class FalloutModItems {
+public class FalloutMcItems {
     public static DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FalloutMC.MOD_ID);
 
     public static final RegistryObject<Item> NUKA_COLA = ITEMS.register("nuka_cola",
-            () -> new Item(new Item.Properties().food(FalloutFoodProperties.NUKA_COLA)));
+            () -> new Item(new Item.Properties().food(FalloutMcFoodProperties.NUKA_COLA)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

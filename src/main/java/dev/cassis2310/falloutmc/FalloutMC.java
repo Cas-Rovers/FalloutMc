@@ -1,7 +1,7 @@
 package dev.cassis2310.falloutmc;
 
 import com.mojang.logging.LogUtils;
-import dev.cassis2310.falloutmc.init.items.FalloutModItems;
+import dev.cassis2310.falloutmc.init.items.FalloutMcItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -29,7 +29,7 @@ public class FalloutMC
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        FalloutModItems.register(modEventBus);
+        FalloutMcItems.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

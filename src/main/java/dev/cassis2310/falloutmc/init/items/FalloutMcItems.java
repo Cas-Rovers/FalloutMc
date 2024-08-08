@@ -17,6 +17,8 @@ public class FalloutMcItems {
             () -> new DrinkItem(new Item.Properties().food(FalloutMcFoodProperties.NUKA_COLA)));
     public static final RegistryObject<Item> STIMPACK = ITEMS.register("stimpack",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> PIP_BOY = ITEMS.register("pip-boy",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 
 
     public static void register(IEventBus eventBus) {

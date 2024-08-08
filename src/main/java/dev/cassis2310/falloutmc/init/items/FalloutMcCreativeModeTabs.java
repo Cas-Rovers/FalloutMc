@@ -19,6 +19,7 @@ public class FalloutMcCreativeModeTabs {
                     .displayItems((displayParameters, output) -> {
                         output.accept(FalloutMcItems.NUKA_COLA.get());
                         output.accept(FalloutMcItems.STIMPACK.get());
+                        output.accept(FalloutMcItems.PIP_BOY.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

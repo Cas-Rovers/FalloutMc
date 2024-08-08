@@ -37,13 +37,13 @@ public class FalloutMC
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        //
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-
+        //
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -52,7 +52,7 @@ public class FalloutMC
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            //
         }
     }
 }
